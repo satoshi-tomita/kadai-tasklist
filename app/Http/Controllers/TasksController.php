@@ -100,7 +100,7 @@ class TasksController extends Controller
         ]);
         
         $task = Task::find($id);
-        $task->status = $erquest->status;
+        $task->status = $request->status;
         $task->content = $request->content;
         $task->save();
         
