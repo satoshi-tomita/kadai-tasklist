@@ -9,16 +9,15 @@
 
             {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
                 <div class="form-group">
-                    {!! Form::label('status', '進捗状況：') !!}
-                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
-                </div>
-                
-                <div class="form-group">
                     {!! Form::label('content', 'タスク内容：') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
+                <div class="form-group">
+                    {!! Form::label('status', '進捗状況：') !!}
+                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
+                </div>
                     
-                {!! Form::submit('更新', ['class' => 'btn btn-default']) !!}
+                {!! Form::submit('Update', ['class' => 'btn btn-default']) !!}
                     
             {!! Form::close() !!}
         </div>
